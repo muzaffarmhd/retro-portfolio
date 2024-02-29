@@ -188,6 +188,7 @@ tr:hover {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    margin-top: 200px;
     margin-bottom: 50px;
 }
 
@@ -215,5 +216,333 @@ tr:hover {
         padding-top: 50px;
         width: 70%;
     }
+    #project-container {
+        padding-bottom: 510px;
+        margin-right: 200px;
+    }
+    #project2-container {
+        padding-bottom: 150px;
+        margin-right: 150px;
+    }
+
+}
+#project-container img {
+    margin-top: 0px;
+    margin-right: -200px;
+    margin-bottom: -510px;
+    line-height: 0;
+    animation: glitch1 3s infinite;
+}
+#project-container img:nth-child(2) {
+    animation: glitch2 3s infinite;
+  }
+  
+#project-container img:nth-child(3) {
+    animation: glitch3 3s infinite;
+  }
+#project2-container img {
+    margin-top: -150px;
+    margin-right: -150px;
+    margin-bottom: -150px;
+    line-height: 0;
+    animation: glitch1 3s infinite;
+}
+#project2-container img:nth-child(2) {
+    animation: glitch2 3s infinite;
+  }
+  
+#project2-container img:nth-child(3) {
+    animation: glitch3 3s infinite;
+  }
+#rethead h1 {
+  text-align: left;
+  color: black;
+  font-size: 5em;
+  letter-spacing: 8px;
+  font-weight: 700;
+  /*Create overlap*/
+  
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  line-height: 0;
+  /*Animation*/
+  
+  animation: glitch1 3s infinite;
 }
 
+#rethead h1:nth-child(2) {
+    color: #73a582;
+    animation: glitch2 3s infinite;
+  }
+  
+#rethead h1:nth-child(3) {
+    color: black;
+    animation: glitch3 3s infinite;
+  }
+
+@keyframes glitch1 {
+        0% {
+            transform: none;
+            opacity: 1;
+        }
+        7% {
+            transform: skew(-0.5deg, 0deg);
+            opacity: 0.75;
+        }
+        10% {
+            transform: none;
+            opacity: 1;
+        }
+        27% {
+            transform: none;
+            opacity: 1;
+        }
+        30% {
+            transform: skew(0.8deg, 0deg);
+            opacity: 0.75;
+        }
+        35% {
+            transform: none;
+            opacity: 1;
+        }
+        52% {
+            transform: none;
+            opacity: 1;
+        }
+        55% {
+            transform: skew(-1deg, 0deg);
+            opacity: 0.75;
+        }
+        50% {
+            transform: none;
+            opacity: 1;
+        }
+        72% {
+            transform: none;
+            opacity: 1;
+        }
+        75% {
+            transform: skew(0.4deg, 0deg);
+            opacity: 0.75;
+        }
+        80% {
+            transform: none;
+            opacity: 1;
+        }
+        100% {
+            transform: none;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes glitch2 {
+        0% {
+            transform: none;
+            opacity: 0.25;
+        }
+        7% {
+            transform: translate(-2px, 0px);
+            opacity: 0.5;
+        }
+        10% {
+            transform: none;
+            opacity: 0.25;
+        }
+        27% {
+            transform: none;
+            opacity: 0.25;
+        }
+        30% {
+            transform: translate(-5px, 0px);
+            opacity: 0.5;
+        }
+        35% {
+            transform: none;
+            opacity: 0.25;
+        }
+        52% {
+            transform: none;
+            opacity: 0.25;
+        }
+        55% {
+            transform: translate(-5px, 0px);
+            opacity: 0.5;
+        }
+        50% {
+            transform: none;
+            opacity: 0.25;
+        }
+        72% {
+            transform: none;
+            opacity: 0.25;
+        }
+        75% {
+            transform: translate(-2px, 0px);
+            opacity: 0.5;
+        }
+        80% {
+            transform: none;
+            opacity: 0.25;
+        }
+        100% {
+            transform: none;
+            opacity: 0.25;
+        }
+    }
+    
+    @keyframes glitch3 {
+        0% {
+            transform: none;
+            opacity: 0.25;
+        }
+        7% {
+            transform: translate(2px, 0px);
+            opacity: 0.5;
+        }
+        10% {
+            transform: none;
+            opacity: 0.25;
+        }
+        27% {
+            transform: none;
+            opacity: 0.25;
+        }
+        30% {
+            transform: translate(5px, 0px);
+            opacity: 0.5;
+        }
+        35% {
+            transform: none;
+            opacity: 0.25;
+        }
+        52% {
+            transform: none;
+            opacity: 0.25;
+        }
+        55% {
+            transform: translate(5px, 0px);
+            opacity: 0.5;
+        }
+        50% {
+            transform: none;
+            opacity: 0.25;
+        }
+        72% {
+            transform: none;
+            opacity: 0.25;
+        }
+        75% {
+            transform: translate(2px, 0px);
+            opacity: 0.5;
+        }
+        80% {
+            transform: none;
+            opacity: 0.25;
+        }
+        100% {
+            transform: none;
+            opacity: 0.25;
+        }
+    }
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,textarea {
+    background-color: transparent;
+    height: 40px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: LCD;
+}
+
+.contact-form textarea {
+    padding-top: 10px;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-form input:focus,textarea:focus {
+    background-color: transparent;
+    outline: none;
+}
+.contact-form input::placeholder,textarea::placeholder {
+    color: black;
+    font-family: LCD;
+}
+/* .contact-form input:hover, textarea:hover {
+    color: white;
+    background-color: black;
+}
+.contact-form input:hover::placeholder,textarea:hover::placeholder {
+    color: white;
+    background-color: black;
+} */
+
+.social h1 {
+    font-size: xx-large;
+}
+
+@media (max-width:768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.social-links a {
+    padding-left: 20px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: LCD;
+    cursor: pointer;
+    width: 120px;
+}
+
+.contact-form button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .social {
+        padding-top: 50px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background-color: #73a582;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+  }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Meow!</title>
 </head>
 <body style="background-color: #73a582; margin: 0px; font-family: LCD;">
     <div class="outer-container">
-        <div class="nav-container">
+        <div id="nav-container" class="nav-container">
             <div>
                 <h1> RETRO </h1>
             </div>
@@ -16,9 +16,9 @@
                 <ul style="list-style: none;">
                     <li class="nav-item"><a href="#Home">Home</a></li>
                     <li class="nav-item"><a href="#About">About</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
-                    <li class="nav-item"><a href="#">GitHub</a></li>
-                    <li class="nav-item"><a href="#">Twitter</a></li>
+                    <li class="nav-item"><a href="#Contact">Contact</a></li>
+                    <li class="nav-item"><a href="https://github.com/muzaffarmhd">GitHub</a></li>
+                    <li class="nav-item"><a href="https://x.com/muzaffarmhd">Twitter</a></li>
                 </ul>
             </div>
         </div>
@@ -27,27 +27,29 @@
                 <div class="hero">
                     <div id="rethead">
                         <h1>Muzaffar<span id="underscore">_</span></h1>
-                        <div>
+                        <h1>Muzaffar<span id="underscore">_</span></h1>
+                        <h1>Muzaffar<span id="underscore">_</span></h1>
+                        <div style="margin-top: 50px;">
                             <p>This is a temporary portfolio made for Web-Programming Assignment and some of it's functions may not work. The code for this is available on my github account. I refrained from using bootstrap for this page, but it is used in some of the linked pages. Go ahead and check them.</p>
                         </div>
-                        <button id="getstarted" style=" border: 1px solid black; margin-top: 10px; cursor: pointer; height: 50px; width: 120px;">Explore</button>
+                        <a href="#Projects"><button id="getstarted" style=" border: 1px solid black; margin-top: 10px; cursor: pointer; height: 50px; width: 120px;">Explore</button></a>
                     </div>
                 </div>
                 <div class="hero-support">
                     <table style="height: 200px; width: 400px;">
                     <tr>
                         <td>
-                            RECENT
+                            FEEL
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            ADVANCEMENTS
+                            THE
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            IN TECHNOLOGY
+                            THRILL
                         </td>
                     </tr>
                     </table>
@@ -87,10 +89,18 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
                 </div>
-                <img src="images/renpylogo.png" alt="">
+                <div id="project-container" style="display: flex; flex-direction: column;">
+                    <img src="images/renpylogo.png" alt="">
+                    <img src="images/renpylogo.png" alt="">
+                    <img src="images/renpylogo.png" alt="">
+                </div>
             </div>
             <div class="project2-container">
-                <img src="images/opensyslogo1.png" style="width: auto; height: 300px;" alt="">
+                <div id="project2-container"  style="display: flex; flex-direction: column;">
+                    <img src="images/opensyslogo1.png" style="width: auto; height: 300px;" alt="">
+                    <img src="images/opensyslogo1.png" style="width: auto; height: 300px;" alt="">
+                    <img src="images/opensyslogo1.png" style="width: auto; height: 300px;" alt="">
+                </div>
                 <div class="about-text">
                     <h1 style="font-size: xx-large;"> OpenSys </h1>
                     <br>
@@ -104,5 +114,39 @@
                 </div>
             </div>
         </section>
+        <section id="Contact">
+            <div class="heading-container">
+                <h1>Contact</h1>
+            </div>
+            <div class="contact-container">
+                <form action="">
+                        <div class="contact-form">
+                            <label for="email"> Email: </label>
+                            <input id="email" type="text" placeholder="Enter your email">
+                            <label for="message"> Message: </label>
+                            <textarea name="" id="message" cols="30" rows="10" placeholder="Please type your message here"></textarea>
+                            <button type="submit">Submit</button>
+                        </div>
+                </form>
+                <div class="social">
+                    <h1>Socials</h1>
+                    <div class="social-links">
+                        <div id="github" style="display: flex; align-items: center; padding-bottom: 20px;">
+                            <img src="images/github-mark.svg" alt="" style="width: 30px; height: auto;">
+                            <a href="https://github.com/muzaffarmhd">GitHub</a>
+                        </div>
+                        <div id="LinkedIn" style="display: flex; align-items: center; padding-bottom: 20px;">
+                            <img src="images/linkedin.png" alt="" style="width: 30px; height: auto;">
+                            <a href="https://www.linkedin.com/in/muzaffarmhd/">LinkedIn</a>
+                        </div>
+                        <div id="Twitter" style="display: flex; align-items: center; padding-bottom: 20px;">
+                            <img src="images/twitter.svg" alt="" style="width: 30px; height: auto;">
+                            <a href="https://x.com/muzaffarmhd">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="page.js"></script>
 </body>
 </html>
